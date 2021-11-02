@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            body{
+                color:rgb(236, 8, 141);
+                padding-left: 250px;
+                padding-right: 250px;
+                padding-bottom: 40px;  
+                background-color: lightpink;             
+            }
+            h1{
+                text-align:center;
+                border-style: solid;
+                border-color: rgba(0, 0, 0, 0);
+                border-radius: 20px;
+                padding: 20px;
+            }
+            div{
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-bottom: 40px;
+                text-align:center;
+                font-size: 18px;
+            }
+            fieldset{
+                border-color: rgba(0, 0, 0, 0);
+                width: 50%;
+                margin:0px auto;
+                border-radius: 10px;
+                background-color:rgba(218, 94, 170, 0.24);
+                font-size: 18px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                box-shadow: 5px 8px 10px rgb(211, 148, 174);
+            }
+            input{
+                border-style:solid;
+                border-radius: 50px;
+            }
+            select{
+                border-radius: 50px;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div>
+        <h1>Olá Fator, vamos fazer o seu cadastro?</h1>
+        </div>
+        <div>
+        <form>
+            <fieldset>
+                <legend>Dados para Login:</legend> <br>
+<!--Login e Senha-->
+                <label for="email">Email</label> <br>
+                <input type="email" id="email" name="email" required placeholder="Digite seu Email..."> <br> <br>
+                
+                <label for="senha">Senha</label> <br>
+                <input type="password" id="senha" name="senha" required placeholder="Digite sua Senha..."> <br> <br>
+                
+                <input type="submit">
+            </fieldset> 
+        </form>
+        </div>
+    
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Dados Pessoais:</legend>
+        <!--Nome, Sobrenome, Sexo, CPF, Telefone, DN-->
+                    <label for="nome">Nome</label> <br>
+                    <input type="text" id="nome" name="dados" required placeholder="Digite seu Nome..."> <br> <br>
+                    
+                    <label for="sobrenome">Sobrenome</label> <br>
+                    <input type="text" id="sobrenome" name="dados" required placeholder="Digite seu Sobrenome..."> <br> <br>
+                    
+                    <label for="sexo">Sexo:</label> <br>
+                    <label for="femi">Feminino</label>
+                    <input type="radio" id="femi" name="sexo">
+
+                    <label for="mascu">Masculino</label>
+                    <input type="radio" id="mascu" name="sexo"> <br> <br>
+
+                    <label for="cpf">CPF</label> <br>
+                    <input type="number" id="cpf" name="dados" required placeholder="Digite seu CPF..."> <br> <br>
+                    
+                    <label for="telefone">Telefone</label> <br>
+                    <input type="tel" id="telefone" name="dados" required placeholder="(99) 99999-9999"> <br> <br>
+
+                    <label for="dn">Data de Nascimento</label> <br>
+                    <input type="date" id="dn" name="dn" required> <br> <br>
+
+                    <input type="submit">
+                </fieldset> 
+            </form>
+            </div>
+
+            <div>
+                <form>
+                    <fieldset>
+                        <legend>Endereço:</legend>
+                        <!--CEP, Rua, Numero, Bairro, Cidade, Estado-->    
+                        <label for="cep">CEP</label> <br>
+                        <input type="number" id="cep" name="endereco" required placeholder="99.999-999"> <br> <br>
+
+                        <label for="rua">Rua</label> <br>
+                        <input type="text" id="rua" name="endereco" required placeholder="Avenida, Estrada, Rua, ..."> <br> <br>
+
+                        <label for="num">Número</label> <br>
+                        <input type="number" id="num" name="endereco" placeholder="Digite o número..."> <br> <br>
+
+                        <label for="bairro">Bairro</label> <br>
+                        <input type="text" id="bairro" name="endereco" placeholder="Digite seu Bairro..."> <br> <br>
+
+                        <label for="cidade">Cidade</label> <br>
+                        <input type="text" id="cidade" name="endereco" required placeholder="Digite sua Cidade..."> <br> <br>
+
+                        <label for="estado">Estado</label> <br>
+                        <select id="estado" name="estado">
+                            <option value="selecione">Selecione seu Estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                        </select> <br> <br>
+
+                        <input type="submit">
+                    </fieldset> 
+                </form>
+                </div>
+                       
+    </body>
+</html>
